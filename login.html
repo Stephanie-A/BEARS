@@ -11,17 +11,20 @@
 	
 		<nav class="bigbluefish">
 			<div>
-				<a id="name" href="main.html">BEARS</a>
+				<a id="name" href="/">BEARS</a>
 				<a id="signup" href="signup.html">Sign Up</a>
 			</div>
 		</nav>
 		
 		<div class="login bigbluefish">
 			<h1>Login</h1>
-			<form>
-				<input class="text" id="user" type="text" placeholder="Username"><br>
-				<input class="text" id="pass" type="text" placeholder="Password"><br>
-				<input id="submit" type="submit">
+			<form name="login" action="/checkusers" method="POST">
+				<input class="text" id="user" type="text" placeholder="Username" name="user"><br>
+				<input class="text" id="pass" type="password" placeholder="Password" name="pass"><br>
+				<form action="/">
+<!--                    <input id="submit" type="submit">-->
+                    <a id="submit" href="/"><input id="submit" type="submit"></a>
+                </form>     
 			</form>
 		</div>
 		
